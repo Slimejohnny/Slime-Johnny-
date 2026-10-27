@@ -1,1 +1,168 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bright Bites Bakery</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fffaf3;
+      color: #382419;
+    }
+
+    header {
+      background: #fff3e4;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .logo {
+      color: #a94426;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    nav { margin-top: 15px; }
+
+    nav a {
+      margin: 0 10px;
+      color: #583625;
+      text-decoration: none;
+    }
+
+    .hero {
+      background: #ffe0bc;
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    h1 { font-size: 38px; }
+
+    button {
+      background: #a94426;
+      color: white;
+      padding: 14px 22px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #special {
+      color: #74351e;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      width: 220px;
+      border: 1px solid #f3d6bd;
+    }
+
+    .pastry { font-size: 50px; }
+
+    .about { background: #fff0db; }
+
+    footer {
+      background: #382419;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">🧁 Bright Bites</div>
+
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Freshly Baked Happiness</h1>
+      <p>Delicious treats made with love!</p>
+
+      <button onclick="showSpecial()">
+        See Today's Special
+      </button>
+
+      <p id="special"></p>
+    </div>
+
+    <section id="menu">
+      <h2>Our Favorites</h2>
+
+      <div class="products">
+        <div class="card">
+          <div class="pastry">🥐</div>
+          <h3>Butter Croissant</h3>
+          <p>Fresh and delicious.</p>
+        </div>
+
+        <div class="card">
+          <div class="pastry">🧁</div>
+          <h3>Vanilla Cupcake</h3>
+          <p>Soft and creamy.</p>
+        </div>
+
+        <div class="card">
+          <div class="pastry">🍪</div>
+          <h3>Chocolate Cookie</h3>
+          <p>Sweet and crunchy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About Us</h2>
+      <p>
+        Welcome to Bright Bites!
+        We make delicious treats with love.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Contact details coming soon.</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Bright Bites Bakery
+  </footer>
+
+  <script>
+    function showSpecial() {
+      document.getElementById("special")
+        .textContent =
+        "Today's special: Free cookie! 🍪";
+    }
+  </script>
+</body>
+</html>
